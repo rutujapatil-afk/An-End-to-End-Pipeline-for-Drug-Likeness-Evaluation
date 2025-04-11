@@ -103,7 +103,7 @@ We save trained models for future use:
 ---
 
 ## 👤 Author
-Developed by [Your Name] — passionate about drug discovery, data science, and AI. Feel free to fork, star ⭐, and contribute!
+Developed by Rutuja Patil — passionate about drug discovery, data science, and AI. Feel free to fork, star ⭐, and contribute!
 
 ---
 
