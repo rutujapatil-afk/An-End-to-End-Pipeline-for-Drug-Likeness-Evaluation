@@ -42,18 +42,20 @@ Clone this repository and install the dependencies:
 git clone https://github.com/rutujapatil-afk/An-End-to-End-Pipeline-for-Drug-Likeness-Evaluation.git
 cd An-End-to-End-Pipeline-for-Drug-Likeness-Evaluation
 pip install -r requirements.txt
-⚡ Usage
+```
+---
+
+## ⚡ Usage
 🖥️ Command Line
-bash
-Copy code
+```
 python evaluate.py \
   --input compounds.smi \
   --output report.json \
   --metrics lipinski,logp,vdw
-🐍 Python API
-python
-Copy code
-from pipeline import DrugLikenessEvaluator
+```
+
+##🐍 Python API
+```from pipeline import DrugLikenessEvaluator
 
 # Initialize evaluator
 evaluator = DrugLikenessEvaluator()
@@ -62,10 +64,10 @@ evaluator = DrugLikenessEvaluator()
 report = evaluator.evaluate("CC(=O)Oc1ccccc1C(=O)O")
 
 print(report)
-💡 Sample Output (JSON):
+```
 
-json
-Copy code
+##💡 Sample Output (JSON):
+```
 {
   "compound": "Aspirin",
   "Lipinski": true,
@@ -75,9 +77,10 @@ Copy code
   "HBA": 4,
   "Verdict": "Drug-like"
 }
-🔄 Pipeline Workflow
-text
-Copy code
+```
+
+##🔄 Pipeline Workflow
+```
 [ Input SMILES/CSV ] 
         ↓
 [ Featurization 🔬 (RDKit) ] 
@@ -87,23 +90,25 @@ Copy code
 [ Drug-likeness Metrics 📏 & ADMET Rules ] 
         ↓
 [ JSON/CSV Report Export 📊 ]
-💻 Tech Stack
-Category	Tools / Libraries
-Language	🐍 Python 3.8+
-Cheminformatics	🧪 RDKit
-Machine Learning	🔥 PyTorch • 🤖 scikit-learn
-Data Handling	📊 pandas • NumPy
-Visualization	📈 Matplotlib • Seaborn
-Version Control	🗂️ Git • GitHub
+```
 
-🤝 Contributing
-Pull requests are welcome! 🚀
-For major changes, please open an issue first to discuss what you’d like to change.
-Make sure to update tests where appropriate ✅.
+## 💻 Tech Stack  
 
-📜 License
-This project is licensed under the MIT License.
+| Category         | Tools / Libraries             |
+|------------------|-------------------------------|
+| Language         | 🐍 Python 3.8+                |
+| Cheminformatics  | 🧪 RDKit                      |
+| Machine Learning | 🔥 PyTorch • 🤖 scikit-learn   |
+| Data Handling    | 📊 pandas • NumPy             |
+| Visualization    | 📈 Matplotlib • Seaborn       |
+| Version Control  | 🗂️ Git • GitHub               |
 
-👩‍💻 Author
-Rutuja Patil
-🔗 GitHub • 💼 LinkedIn
+## 👩‍💻 Author  
+
+**Rutuja Patil**  
+
+- 🔗 [GitHub](https://github.com/rutujapatil-afk)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/rutuja-patil20/)  
+
+
+  
